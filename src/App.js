@@ -7,7 +7,7 @@ function App() {
   return (
     <BrowserRouter>
       <Switch>
-        <Route path="/sample1" component={Sample1} />
+        <Route path="/shristi" component={Sample1} />
       </Switch>
     </BrowserRouter>
   );
