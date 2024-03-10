@@ -1,0 +1,124 @@
+.sampleHead {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  display: flex;
+  flex-wrap: wrap-reverse;
+  align-items: center;
+  justify-content: center;
+}
+.sampleHeadTop {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 30px;
+  padding-left: 50px;
+}
+.sampleHeadName {
+  width: 70%;
+}
+.sampleHeadLinks {
+  width: 30%;
+}
+.headImage {
+  width: 35%;
+  position: relative;
+  height: 100vh;
+}
+.headImage img {
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  z-index: 1;
+}
+.headLinks {
+  position: relative;
+  padding: 30px 10px 10px 5px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  z-index: 10011;
+}
+.headLinksUnit {
+  width: 18%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 3px;
+  cursor: pointer;
+}
+.headLinksUnit p {
+  font-size: 15px;
+}
+.headLinksUnitActive {
+  width: 18%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  padding-bottom: 3px;
+  border-bottom: 1px solid black;
+}
+.headLinksUnitActive p {
+  font-size: 17px;
+  font-weight: bold;
+}
+.headIntro {
+  width: 65%;
+  height: 100vh;
+  padding: 30px 10px 20px 160px;
+}
+.sampleHeadName {
+  width: 100%;
+}
+.sampleHeadName p {
+  font-family: cursive;
+  font-size: 18px;
+  font-weight: bold;
+}
+.introContainer {
+  padding: 70px 20px 20px 0px;
+}
+.introHello {
+  width: 100%;
+}
+.introHello p{
+    color: rgb(0, 0, 136);
+    font-size: 16px;
+}
+.introFormal{
+    margin-top: 10px;
+}
+.introFormal p{
+    font-size: 3.5rem;
+}
+.introFormal span{
+    font-size: 3.5rem;
+    font-weight: bold;
+}
+.introFormalSmall{
+    width:80%;
+    margin-top: 10px;
+}
+.introFormalSmall p{
+    font-size: 1.4rem;
+    line-height: 1.8rem;
+}
+.introButtons{
+    width:100%;
+    margin-top: 40px;
+}
+.introButtons button{
+    padding:18px 25px;
+    border-radius: 10px;
+    border: none;
+}
+
+.personalFav{
+ width:100%;
+ padding: 60px 10px 20px 160px;
+}
