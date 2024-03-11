@@ -96,6 +96,16 @@
 .introFormal p{
     font-size: 3.5rem;
 }
+.introMedium{
+  margin-top: 10px;
+}
+.introMedium p{
+  font-size: 2.5rem;
+}
+.introMedium span{
+  font-size: 3rem;
+  font-weight: bold;
+}
 .introFormal span{
     font-size: 3.5rem;
     font-weight: bold;
@@ -119,6 +129,60 @@
 }
 
 .personalFav{
- width:100%;
+ width:92%;
+ margin-right: 4%;
  padding: 60px 10px 20px 160px;
+}
+.personalContainer{
+  width:100%;
+  margin:20px 0px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.personalCard{
+  width:19%;
+  min-height:50px;
+  padding:20px;
+  border-radius: 10px;
+  background: rgb(243 244 246);
+}
+.personalImage{
+  width:40px;
+  height:40px;
+  padding:10px;
+  background-color: #fff;
+}
+.personalImage img{
+  width:100%;
+  height:100%;
+}
+.personalTitle{
+  width:100%;
+  padding:20px 5px;
+}
+.personalTitle p{
+  font-size: 18px;
+  font-weight: bold;
+}
+.personalText{
+  width:100%;
+  padding:0px 10px;
+}
+.personalText p{
+  font-size: 13px;
+}
+
+.artCard{
+  width:23%;
+  height:350px;
+  padding:10px;
+  border-radius: 5px;
+  background: #fff;
+  border:1px solid #33475b;
+}
+.artCard img{
+  width:100%;
+  height:100%;
+  border:none;
 }
