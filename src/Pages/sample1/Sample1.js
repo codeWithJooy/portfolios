@@ -8,6 +8,7 @@ import AchivementCard from "../../Components/Sample1/Achivement/AchivementCard";
 const Sample1 = () => {
   return (
     <div className="main2">
+      <MainSection />
       <div className="personalFav">
         <div className="introHello">
           <p>TOOLS & TECH</p>

@@ -69,8 +69,47 @@
 }
 .headIntro {
   width: 65%;
+  position: relative;
   height: 100vh;
   padding: 30px 10px 20px 160px;
+}
+.headIntro img.introBg {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  z-index: -1;
+  height: 100%;
+  width: 100%;
+  visibility: hidden;
+  opacity: 0.5;
+}
+.mobileHeader{
+  width:100%;
+  position: fixed;
+  top:0;
+  left:0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height:60px;
+  padding:10px 20px 0px 20px;
+  background-color: #fff;
+}
+.mobileName{
+ width:80%;
+ display: flex;
+ align-items: center;
+ justify-content: flex-start;
+ height:40px;
+}
+.mobileHamburger{
+  width:20%;
+}
+.mobileHamburger img{
+  width:40px;
+  height:40px;
 }
 .sampleHeadName {
   width: 100%;
@@ -86,198 +125,239 @@
 .introHello {
   width: 100%;
 }
-.introHello p{
-    color: rgb(0, 0, 136);
-    font-size: 16px;
+.introHello p {
+  color: rgb(0, 0, 136);
+  font-size: 16px;
 }
 
-.introFormal{
-    margin-top: 10px;
-}
-.introFormal p{
-    font-size: 3.5rem;
-}
-.introMedium{
+.introFormal {
   margin-top: 10px;
 }
-.introMedium p{
+.introFormal p {
+  font-size: 3.5rem;
+}
+.introMedium {
+  margin-top: 10px;
+}
+.introMedium p {
   font-size: 2.5rem;
 }
-.introMedium span{
+.introMedium span {
   font-size: 3rem;
   font-weight: bold;
 }
-.introFormal span{
-    font-size: 3.5rem;
-    font-weight: bold;
+.introFormal span {
+  font-size: 3.5rem;
+  font-weight: bold;
 }
-.introFormalSmall{
-    width:80%;
-    margin-top: 10px;
+.introFormalSmall {
+  width: 80%;
+  margin-top: 10px;
 }
-.introFormalSmall p{
-    font-size: 1.4rem;
-    line-height: 1.8rem;
+.introFormalSmall p {
+  font-size: 1.4rem;
+  line-height: 1.8rem;
 }
-.introButtons{
-    width:100%;
-    margin-top: 40px;
+.introButtons {
+  width: 100%;
+  margin-top: 40px;
 }
-.introButtons button{
-    padding:18px 25px;
-    border-radius: 10px;
-    border: none;
+.introButtons button {
+  padding: 18px 25px;
+  border-radius: 10px;
+}
+.workButton {
+  background-color: black;
+  color: #fff;
+  font-size: 15px;
+  font-weight: bold;
+  margin-right: 20px;
+  border: none;
+}
+.resumeButtom {
+  background-color: #fff;
+  color: black;
+  font-size: 15px;
+  font-weight: bold;
+  border: 1px solid black;
+}
+.resumeButtom {
+}
+.personalFav {
+  width: 92%;
+  margin-right: 4%;
+  padding: 60px 10px 20px 160px;
 }
 
-.personalFav{
- width:92%;
- margin-right: 4%;
- padding: 60px 10px 20px 160px;
-}
-
-.personalContainer{
-  width:100%;
-  margin:20px 0px;
+.personalContainer {
+  width: 100%;
+  margin: 20px 0px;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
 }
-.personalCard{
-  width:19%;
-  min-height:50px;
-  padding:20px;
+.personalCard {
+  width: 19%;
+  min-height: 50px;
+  padding: 20px;
   border-radius: 10px;
   background: rgb(243 244 246);
 }
-.personalImage{
-  width:40px;
-  height:40px;
-  padding:10px;
+.personalImage {
+  width: 40px;
+  height: 40px;
+  padding: 10px;
   background-color: #fff;
 }
-.personalImage img{
-  width:100%;
-  height:100%;
+.personalImage img {
+  width: 100%;
+  height: 100%;
 }
-.personalTitle{
-  width:100%;
-  padding:20px 5px;
+.personalTitle {
+  width: 100%;
+  padding: 20px 5px;
 }
-.personalTitle p{
+.personalTitle p {
   font-size: 18px;
   font-weight: bold;
 }
-.personalText{
-  width:100%;
-  padding:0px 10px;
+.personalText {
+  width: 100%;
+  padding: 0px 10px;
 }
-.personalText p{
+.personalText p {
   font-size: 13px;
 }
 
-.artCard{
-  width:23%;
-  height:350px;
-  padding:10px;
+.artCard {
+  width: 23%;
+  height: 350px;
+  padding: 10px;
   border-radius: 5px;
   background: #fff;
-  border:1px solid #33475b;
+  border: 1px solid #33475b;
 }
-.artCard img{
-  width:100%;
-  height:100%;
-  border:none;
+.artCard img {
+  width: 100%;
+  height: 100%;
+  border: none;
 }
 
-.achCard{
-  width:48%;
+.achCard {
+  width: 48%;
   min-height: 150px;
-  padding:20px;
-  border:1px solid #33475b;
+  padding: 20px;
+  border: 1px solid #33475b;
 }
-.achTag{
-  padding:5px;
+.achTag {
+  padding: 5px;
   width: 200px;
   border-radius: 10px;
   display: flex;
   align-items: center;
   justify-content: center;
 }
-.achPic{
-  width:100%;
-  height:300px;
+.achPic {
+  width: 100%;
+  height: 300px;
   margin-top: 10px;
 }
-.achPic img{
-  width:100%;
-  height:100%;
+.achPic img {
+  width: 100%;
+  height: 100%;
 }
-.achTitle{
-  width:100%;
-  height:60px;
-  margin:15px 0px 5px;
+.achTitle {
+  width: 100%;
+  height: 60px;
+  margin: 15px 0px 5px;
 }
-.achTitle p{
+.achTitle p {
   font-size: 22px;
   font-weight: bold;
 }
-.achDesc p{
+.achDesc p {
   font-size: 16px;
 }
-@media screen and (max-width:1024px) {
-  .personalFav{
-    width:100%;
+@media screen and (max-width: 1024px) {
+  .headIntro {
+    width: 100%;
+    min-height: 100vh;
+    padding: 20px;
+  }
+  .headIntro img.introBg {
+    visibility: visible;
+  }
+  .introFormal p {
+    font-size: 3rem;
+  }
+  .introFormal span {
+    font-size: 3rem;
+    font-weight: bold;
+  }
+  .introFormalSmall {
+    width: 80%;
+    margin-top: 10px;
+  }
+  .introFormalSmall p {
+    font-size: 17px;
+    line-height: 1.8rem;
+  }
+  .headImage {
+    display: none;
+  }
+  .personalFav {
+    width: 100%;
     margin: 0;
-    padding:20px;
+    padding: 20px;
   }
-  .introHello p{
-     font-size: 13px;
+  .introHello p {
+    font-size: 13px;
   }
-  .introMedium p{
+  .introMedium p {
     font-size: 15px;
   }
-  .introMedium span{
+  .introMedium span {
     font-size: 20px;
   }
-  .personalCard{
+  .personalCard {
     width: 48%;
-    padding:10px;
+    padding: 10px;
     margin-bottom: 10px;
   }
-  .personalImage{
-    width:20px;
-    height:20px;
+  .personalImage {
+    width: 20px;
+    height: 20px;
   }
-  .personalImage img{
-    width:100%;
-    height:100%;
+  .personalImage img {
+    width: 100%;
+    height: 100%;
   }
-  .personalTitle{
-    width:100%;
-    padding:10px 5px;
+  .personalTitle {
+    width: 100%;
+    padding: 10px 5px;
   }
-  .personalTitle p{
+  .personalTitle p {
     font-size: 15px;
     font-weight: bold;
   }
-  .personalText{
-    width:100%;
-    padding:0px 5px;
+  .personalText {
+    width: 100%;
+    padding: 0px 5px;
   }
-  .personalText p{
+  .personalText p {
     font-size: 12px;
   }
-  .achCard{
-    width:98%;
+  .achCard {
+    width: 98%;
     margin-bottom: 20px;
   }
-  .artCard{
-    width:98%;
-    height:450px;
+  .artCard {
+    width: 98%;
+    height: 450px;
     margin-bottom: 20px;
   }
-  .achTitle p{
+  .achTitle p {
     font-size: 18px;
     font-weight: bold;
   }
