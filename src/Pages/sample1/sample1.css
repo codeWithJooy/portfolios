@@ -90,6 +90,7 @@
     color: rgb(0, 0, 136);
     font-size: 16px;
 }
+
 .introFormal{
     margin-top: 10px;
 }
@@ -133,10 +134,12 @@
  margin-right: 4%;
  padding: 60px 10px 20px 160px;
 }
+
 .personalContainer{
   width:100%;
   margin:20px 0px;
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
 }
@@ -185,4 +188,97 @@
   width:100%;
   height:100%;
   border:none;
+}
+
+.achCard{
+  width:48%;
+  min-height: 150px;
+  padding:20px;
+  border:1px solid #33475b;
+}
+.achTag{
+  padding:5px;
+  width: 200px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.achPic{
+  width:100%;
+  height:300px;
+  margin-top: 10px;
+}
+.achPic img{
+  width:100%;
+  height:100%;
+}
+.achTitle{
+  width:100%;
+  height:60px;
+  margin:15px 0px 5px;
+}
+.achTitle p{
+  font-size: 22px;
+  font-weight: bold;
+}
+.achDesc p{
+  font-size: 16px;
+}
+@media screen and (max-width:1024px) {
+  .personalFav{
+    width:100%;
+    margin: 0;
+    padding:20px;
+  }
+  .introHello p{
+     font-size: 13px;
+  }
+  .introMedium p{
+    font-size: 15px;
+  }
+  .introMedium span{
+    font-size: 20px;
+  }
+  .personalCard{
+    width: 48%;
+    padding:10px;
+    margin-bottom: 10px;
+  }
+  .personalImage{
+    width:20px;
+    height:20px;
+  }
+  .personalImage img{
+    width:100%;
+    height:100%;
+  }
+  .personalTitle{
+    width:100%;
+    padding:10px 5px;
+  }
+  .personalTitle p{
+    font-size: 15px;
+    font-weight: bold;
+  }
+  .personalText{
+    width:100%;
+    padding:0px 5px;
+  }
+  .personalText p{
+    font-size: 12px;
+  }
+  .achCard{
+    width:98%;
+    margin-bottom: 20px;
+  }
+  .artCard{
+    width:98%;
+    height:450px;
+    margin-bottom: 20px;
+  }
+  .achTitle p{
+    font-size: 18px;
+    font-weight: bold;
+  }
 }
