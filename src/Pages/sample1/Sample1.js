@@ -18,6 +18,12 @@ const Sample1 = () => {
     projectsSection.scrollIntoView({ behavior: "smooth" });
     
   };
+  const scrollToProjects2 = () => {
+    
+    const projectsSection = document.getElementById("projectsSection");
+    projectsSection.scrollIntoView({ behavior: "smooth" });
+    
+  };
   const scrollToArt = () => {
     setOpen(!open)
     const projectsSection = document.getElementById("art");
@@ -79,7 +85,7 @@ const Sample1 = () => {
               </p>
             </div>
             <div className="introButtons">
-              <button className="workButton" onClick={scrollToProjects}>
+              <button className="workButton" onClick={scrollToProjects2}>
                 See My Works
               </button>
               <button className="resumeButton">My Resume</button>
