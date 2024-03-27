@@ -7,6 +7,9 @@
   align-items: center;
   justify-content: center;
 }
+.mobileOpen{
+  display: none;
+}
 .sampleHeadTop {
   position: absolute;
   top: 0;
@@ -88,14 +91,17 @@
 .mobileHeader{
   width:100%;
   position: fixed;
+  visibility: hidden;
   top:0;
   left:0;
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: center;
   height:60px;
   padding:10px 20px 0px 20px;
   background-color: #fff;
+  z-index: 9999999999999;
 }
 .mobileName{
  width:80%;
@@ -103,6 +109,11 @@
  align-items: center;
  justify-content: flex-start;
  height:40px;
+}
+.mobileName p {
+  font-family: cursive;
+  font-size: 18px;
+  font-weight: bold;
 }
 .mobileHamburger{
   width:20%;
@@ -188,7 +199,59 @@
   margin-right: 4%;
   padding: 60px 10px 20px 160px;
 }
-
+.aboutme {
+  position: relative;
+  width: 100%;
+  padding: 60px 100px 20px 160px;
+  background: rgb(243 244 246);
+  min-height: 300px;
+}
+.aboutMeContainer{
+  padding: 30px 0px;
+}
+.aboutmemisc{
+  position: absolute;
+}
+.aboutmemisc p{
+  font-size: 40px;
+  font-weight: bold;
+  color: #fff;
+}
+.aboutOthers{
+  width:60%;
+  margin-left: 40%;
+  z-index: 9999;
+}
+.aboutOthers p{
+  font-size: 22px;
+  line-height: 1.8em;
+}
+.aboutDo{
+  width:100%;
+  margin-top: 30px;
+}
+.aboutDoTitle{
+  width:100;
+  margin-bottom: 5px;
+}
+.aboutDoTitle p{
+  font-size: 18px;
+  font-weight: bold;
+}
+.aboutDoCards{
+  width:100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.aboutCard{
+  width: 32%;
+  min-height: 50px;
+  padding: 20px;
+  border-radius: 10px;
+  background: #fff;
+  margin-bottom: 10px;
+}
 .personalContainer {
   width: 100%;
   margin: 20px 0px;
@@ -204,6 +267,7 @@
   border-radius: 10px;
   background: rgb(243 244 246);
 }
+
 .personalImage {
   width: 40px;
   height: 40px;
@@ -248,6 +312,7 @@
   width: 48%;
   min-height: 150px;
   padding: 20px;
+  margin-bottom: 20px;
   border: 1px solid #33475b;
 }
 .achTag {
@@ -257,6 +322,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  border: 1px solid #000;
 }
 .achPic {
   width: 100%;
@@ -279,6 +345,117 @@
 .achDesc p {
   font-size: 16px;
 }
+
+.hobbyCard{
+  width:32%;
+  height:400px;
+  position: relative;
+  border: 2px solid #000;
+  margin-bottom: 30px;
+}
+.hobbyTag{
+  position: absolute;
+  top:20px;
+  left:20px;
+  padding:5px 15px;
+  border: 1px solid lightgray;
+  border-radius: 15px;
+  background-color: #fff;
+}
+.hobbyDetails{
+  position: absolute;
+  bottom:0;
+  left:0;
+  width:100%;
+  height:150px;
+  background: rgba(0, 0,0,0.5);
+  z-index: 999999;
+  padding: 50px 20px;
+}
+.hobbyHeader{
+  color: #fff;
+  font-size: 30px;
+  font-weight: bold;
+}
+.hobbyHeader p{
+  font-size: 25px;
+}
+.hobbyDesc p{
+  font-size: 15px;
+  color:lightgray;
+}
+.hobbyCard img{
+  width:100%;
+  height:100%;
+  z-index: 10;
+}
+.footerSection{
+  width:100%;
+  min-height:200px;
+  padding: 100px 0px;
+  background-color: lightgray;
+  
+}
+.footerTab{
+  width:90%;
+  padding:50px;
+  margin-left: 5%;
+  min-height:150px;
+  background-color: #33475b;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.tabContainer{
+  width:100%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+.tabSection{
+  width:33%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+.tabSmall{
+  width:100%;
+  color: #fff;
+}
+.tabMain{
+  width:100%;
+}
+.tabMain p{
+  font-size: 55px;
+  font-weight: bold;
+  color: #fff;
+}
+.tabMidBold{
+  width:100%;
+  text-align: center;
+  margin-bottom: 10px;
+}
+.tabMidBold p{
+  font-weight:bold;
+  color:#fff;
+}
+.tabMidBold img{
+  height: 35px;
+  width:35px;
+  margin-right: 15px;
+}
+.tabFinal{
+  width:100%;
+  text-align: center;
+  margin-top: 30px;
+}
+.tabFinal p{
+   font-size: 15px;
+   font-weight: bold;
+   color:#33475b
+}
 @media screen and (max-width: 1024px) {
   .headIntro {
     width: 100%;
@@ -286,6 +463,9 @@
     padding: 20px;
   }
   .headIntro img.introBg {
+    visibility: visible;
+  }
+  .mobileHeader{
     visibility: visible;
   }
   .introFormal p {
@@ -310,6 +490,29 @@
     width: 100%;
     margin: 0;
     padding: 20px;
+  }
+  .aboutme {
+    position: relative;
+    width: 100%;
+    padding: 20px;
+    background: rgb(243 244 246);
+    min-height: 300px;
+  }
+  .aboutOthers{
+    width:100%;
+    margin-left: 0;
+  }
+  .aboutOthers p{
+    font-size: 15px;
+    line-height: 1.5em;
+  }
+  .aboutCard{
+    width: 48%;
+    min-height: 50px;
+    padding: 20px;
+    border-radius: 10px;
+    background: #fff;
+    margin-bottom: 10px;
   }
   .introHello p {
     font-size: 13px;
@@ -360,5 +563,49 @@
   .achTitle p {
     font-size: 18px;
     font-weight: bold;
+  }
+  .hobbyCard{
+    width:100%;
+  }
+  .footerSection{
+    padding:0px;
+  }
+  .footerTab{
+    width:100%;
+    margin:0;
+    padding:10px;
+  }
+  .tabSection{
+    width:100%;
+    margin-bottom: 20px;
+  }
+  .tabSmall{
+    text-align: center;
+  }
+  .tabMain{
+    text-align: center;
+  }
+  .tabMain p{
+    font-size: 25px;
+  }
+  .aboutmemisc{
+    visibility: hidden;
+  }
+  .mobileOpen{
+    width: 100%;
+    background: #fff;
+
+    z-Index: 100000000;
+    margin-top: 20px;
+    display: block;
+  }
+  .mobileOpenUnit{
+    width:100%;
+    padding:20px 20px;
+    border-bottom: 1px solid #33475b;
+  }
+  .mobileOpenUnit p{
+     font-weight: bold;
+     font-size: 18px;
   }
 }

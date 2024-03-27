@@ -23,7 +23,7 @@ const MainSection = () => {
           <div className="introFormal">
             <p>
               I’m
-              <span> Sujoy, UI Designer</span> and{" "}
+              <span> Shristi Das, UI Designer</span> and{" "}
               <span>Frontend Developer .</span>
             </p>
           </div>
